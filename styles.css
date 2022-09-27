@@ -1,0 +1,797 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: blanchedalmond;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+body {
+  width: 800px;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(216, 225, 208);
+  font-size: 1.6rem;
+  color: rgb(4, 114, 4);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.logo {
+  width: 80rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.logo__img {
+  width: 13rem;
+  height: 6rem;
+  border-radius: 1.5rem;
+  opacity: 0.8;
+}
+
+.cart__img {
+  width: 5rem;
+  height: 5rem;
+  opacity: 0.6;
+}
+
+.menu__button {
+  display: none;
+}
+
+h1 {
+  color: rgb(4, 114, 4);
+  width: 50rem;
+  line-height: auto;
+  padding-top: 2rem;
+  padding-left: 7.5rem;
+  font-weight: bolder;
+  word-spacing: 1rem;
+}
+
+.navbar {
+  margin-left: 1rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: rgb(89, 127, 89);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: blanchedalmond;
+}
+.navbar a:visited {
+  color: blanchedalmond;
+}
+.navbar .navbar section {
+  color: blanchedalmond;
+}
+.navbar .navbar section:hover {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.main .managerNote {
+  height: 15rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  position: relative;
+  padding-left: 4rem;
+  background-color: rgb(209, 214, 209);
+  margin-top: 5rem;
+  margin-left: 7rem;
+  border-radius: 4rem;
+}
+.main .greetingNote {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  color: rgb(33, 40, 36);
+}
+.main .greetingNote__span,
+.main .greetingNote__span__tablet {
+  font-weight: bold;
+}
+.main .signature {
+  position: absolute;
+  top: 70%;
+  right: 33%;
+  font-style: italic;
+}
+.main .managerNote__img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 4rem;
+  margin-top: 1.5rem;
+}
+
+.qrcode {
+  position: relative;
+  padding-top: 5rem;
+}
+.qrcode .qrcode__h2 {
+  height: 5rem;
+  text-align: center;
+  padding-top: 3rem;
+  color: rgb(240, 138, 126);
+}
+.qrcode .qrcode__img--base {
+  opacity: 0.3;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-radius: 8rem;
+}
+.qrcode .qrcode__img--top {
+  position: absolute;
+  width: 45%;
+  top: 20%;
+  right: 26%;
+  height: auto;
+  border: 5px solid rgb(240, 138, 126);
+}
+
+.qrcode__button {
+  margin-top: 2rem;
+  margin-left: 10.5rem;
+  font-size: 1.8rem;
+  font-style: lucida;
+  width: 25rem;
+  height: 5rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(4, 114, 4);
+  background-color: blanchedalmond;
+  box-shadow: 5px 5px 1px 1px rgb(150, 186, 150);
+  justify-items: center;
+  margin-left: 33%;
+}
+
+.qrcode__button:hover {
+  font-weight: bold;
+  border: 5px solid rgb(240, 138, 126);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.footer {
+  margin-top: 5rem;
+  background-color: rgb(89, 127, 89);
+  color: blanchedalmond;
+  height: 13rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.footer .copyright {
+  padding-left: 8rem;
+  padding-top: 4.5rem;
+  line-height: 2.5rem;
+}
+.footer .businessDetails {
+  padding-top: 0rem;
+  line-height: 2.5rem;
+}
+
+.copyright__img {
+  width: 2rem;
+  background-color: blanchedalmond;
+  border-radius: 50%;
+}
+
+.tableNumberQrcode {
+  position: relative;
+}
+.tableNumberQrcode .tableNumberQrcode__h3 {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  word-spacing: 1rem;
+  color: var(--medium-green);
+  font-weight: bold;
+}
+.tableNumberQrcode .tableNumberQrcode__img {
+  width: 2.5rem;
+  position: absolute;
+  top: 53%;
+  right: 22%;
+}
+
+.menu .menu__div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 2rem;
+  width: 80%;
+  height: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu .menu__h2 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 3rem;
+  letter-spacing: 2rem;
+  padding-bottom: 2rem;
+}
+
+.menu__div section h3 {
+  text-align: center;
+}
+
+.menu__img {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 4rem;
+  margin-left: 4rem;
+  margin-right: auto;
+  box-shadow: 8px 8px 0 rgb(177, 182, 177);
+}
+
+.menu__img:hover {
+  width: 26rem;
+  height: 26rem;
+  box-shadow: 8px 8px 0 rgb(177, 182, 177);
+}
+
+.footer__button button {
+  margin-left: 10.5rem;
+  font-size: 1.8rem;
+  font-style: lucida;
+  width: 25rem;
+  height: 5rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(4, 114, 4);
+  background-color: blanchedalmond;
+  box-shadow: 5px 5px 1px 1px rgb(150, 186, 150);
+  justify-items: center;
+}
+
+.footer__button button:hover {
+  font-weight: bold;
+  border: 5px solid rgb(240, 138, 126);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.drink .drink__h1 {
+  width: 82rem;
+  padding-left: 33%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.drink .drink__div {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 2rem;
+  margin-left: 10rem;
+}
+.drink .drink__div section {
+  border: 2px solid darkgreen;
+  border-radius: 4rem;
+  padding: 1rem 2rem;
+  background-color: blanchedalmond;
+}
+.drink .drink__ul {
+  margin-top: 5rem;
+  background-color: var(--gentle-yellow);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid darkgreen;
+  border-radius: 4rem;
+  padding-bottom: 2rem;
+  position: relative;
+  box-shadow: 8px 8px 0 rgb(177, 182, 177);
+  margin-bottom: 3rem;
+}
+.drink .drink__ul h3 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  margin-right: 2rem;
+}
+.drink .drink__ul li {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  width: 90%;
+  border: 1px dotted darkgreen;
+  border-radius: 2rem;
+  line-height: 3rem;
+}
+
+.drink__button--price1 {
+  width: 5rem;
+  height: 3rem;
+  position: absolute;
+  right: 15%;
+  border: none;
+  background-color: transparent;
+}
+
+.drink__button {
+  width: 5rem;
+  height: 3rem;
+  position: absolute;
+  right: 7%;
+}
+
+.cabinetdish .cabinetdish__h1 {
+  width: 99%;
+  text-align: center;
+  padding-left: 0rem;
+}
+.cabinetdish .cabinetdish__div {
+  margin-top: 5rem;
+  margin-left: 1.5rem;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 33.3% 33.3% auto;
+  gap: 3rem;
+  margin-bottom: 10rem;
+}
+.cabinetdish .cabinetdish__div section {
+  background-color: blanchedalmond;
+  height: 22rem;
+  position: relative;
+  box-shadow: 8px 8px 0 rgb(177, 182, 177);
+  border-radius: 4rem;
+}
+
+.cabinetdish__span {
+  position: absolute;
+  top: 84%;
+  right: 55%;
+}
+
+.cabinetdish__img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1.5rem;
+  width: 15rem;
+  height: 12rem;
+}
+
+.cabinetdish__h1,
+.breakfast__h1,
+.lunch__h1,
+.myorder__h1 {
+  width: 99%;
+  text-align: center;
+  padding-left: 0rem;
+}
+
+.cabinetdish__div section h3,
+.breakfast__div section h3,
+.lunch__div section h3,
+.form h3 {
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.cabinetdish__button,
+.breakfast__button,
+.lunch__button {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  position: absolute;
+  width: 8rem;
+  height: 3.5rem;
+  top: 78%;
+  right: 15%;
+  border-radius: 4rem;
+  background-color: rgb(216, 225, 208);
+}
+
+.breakfast__div,
+.lunch__div {
+  margin-top: 5rem;
+  margin-left: 2.5rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+
+.breakfast__div section,
+.lunch__div section {
+  position: relative;
+  background-color: blanchedalmond;
+  width: 34rem;
+  height: 34rem;
+  border-radius: 4rem;
+  box-shadow: 8px 8px 0 rgb(177, 182, 177);
+}
+
+.breakfast__img,
+.lunch__img {
+  width: 20rem;
+  height: 14rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.breakfast__div section:hover,
+.lunch__div section:hover {
+  box-shadow: 8px 8px 0 rgb(177, 182, 177);
+}
+
+.breakfast__div section p,
+.lunch__div p {
+  padding: 2rem;
+  justify-content: center;
+}
+
+.price {
+  position: absolute;
+  top: 85%;
+  right: 58%;
+}
+
+.breakfast__button {
+  top: 82%;
+  right: 27%;
+}
+
+.lunch__div section .price {
+  position: absolute;
+  top: 87%;
+  right: 58%;
+}
+
+.lunch__div section .lunch__button {
+  position: absolute;
+  top: 83%;
+  right: 30%;
+}
+
+.myorder {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 30rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  background-color: rgb(216, 225, 208);
+  border: 2px solid darkgreen;
+  border-radius: 4rem;
+}
+.myorder table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  width: 80%;
+  height: 13rem;
+  margin-top: 3rem;
+  justify-content: center;
+  border: 2px solid whitesmoke;
+  text-align: center;
+}
+.myorder .myorder h3 {
+  text-align: center;
+}
+.myorder th,
+.myorder tfoot {
+  height: 2rem;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid var(--darker-green);
+  text-align: center;
+}
+
+.instruction {
+  width: 60%;
+  height: 35rem;
+  margin-top: 8rem;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid darkgreen;
+  border-radius: 4rem;
+  margin-bottom: 5rem;
+}
+.instruction h3 {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.instruction textarea {
+  width: 80%;
+  height: 60%;
+  margin-left: 10%;
+}
+.instruction button {
+  margin-left: 10.5rem;
+  font-size: 1.8rem;
+  font-style: lucida;
+  width: 25rem;
+  height: 5rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(4, 114, 4);
+  background-color: blanchedalmond;
+  box-shadow: 5px 5px 1px 1px rgb(150, 186, 150);
+  justify-items: center;
+}
+.instruction button:hover {
+  font-weight: bold;
+  border: 5px solid rgb(240, 138, 126);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.payment {
+  height: 14rem;
+  width: 60%;
+  padding-top: 0.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid darkgreen;
+  border-radius: 4rem;
+}
+.payment .payment__table {
+  height: 8rem;
+  padding-top: 1rem;
+  padding-left: 3rem;
+}
+
+.selectPayment {
+  margin-top: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5rem;
+  border: 2px solid darkgreen;
+  border-radius: 4rem;
+  width: 60%;
+  line-height: 4rem;
+}
+.selectPayment .selectPayment__h3 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.creditcard {
+  height: 30rem;
+  line-height: 0.1rem;
+  position: relative;
+}
+.creditcard h4 {
+  margin-left: 8rem;
+  text-align: left;
+}
+.creditcard h3 {
+  padding-top: 2rem;
+  margin-left: 4rem;
+}
+.creditcard .creditcard__img {
+  width: 2rem;
+  position: absolute;
+  top: 7%;
+  right: 93%;
+}
+.creditcard textarea {
+  display: block;
+  margin-left: 8rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  height: 3rem;
+}
+.creditcard .creditcard__img {
+  width: 2rem;
+}
+
+.otherPayment {
+  position: relative;
+  margin-top: 6rem;
+}
+.otherPayment h4 {
+  margin-left: 5rem;
+}
+.otherPayment .otherPayment1 h3,
+.otherPayment .otherPayment2 h3 {
+  padding-left: 4rem;
+}
+.otherPayment .otherPayment1__img,
+.otherPayment .otherPayment2__img {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+}
+.otherPayment .otherPayment1__img {
+  top: 6%;
+  right: 93%;
+}
+.otherPayment .otherPayment2__img {
+  top: 70%;
+  right: 93%;
+}
+
+.thanksNote {
+  height: 15rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  position: relative;
+  padding-left: 4rem;
+  background-color: blanchedalmond;
+  margin-top: 5rem;
+  margin-left: 7.5rem;
+  border-radius: 4rem;
+}
+.thanksNote .thanksNote__img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 4rem;
+  margin-top: 1.5rem;
+}
+.thanksNote .thanksNote__div {
+  padding-left: 3rem;
+  padding-top: 2.5rem;
+}
+
+.form {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4rem;
+  width: 80%;
+  background-color: blanchedalmond;
+}
+.form h3 {
+  font-size: 2rem;
+}
+.form .formItem {
+  padding-left: 5rem;
+  width: 100%;
+  position: relative;
+}
+.form .formItem input {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 0;
+  border-radius: 30px;
+}
+.form .formItem #message {
+  height: 124px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 15px;
+  width: 90%;
+  resize: none;
+  border: none;
+  border-radius: 2rem;
+}
+.form .formItem .fa {
+  position: absolute;
+  right: 88%;
+  top: 25%;
+}
+.form .formItem__button {
+  margin-left: 10.5rem;
+  font-size: 1.8rem;
+  font-style: lucida;
+  width: 25rem;
+  height: 5rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(4, 114, 4);
+  background-color: blanchedalmond;
+  box-shadow: 5px 5px 1px 1px rgb(150, 186, 150);
+  justify-items: center;
+  margin-left: 20rem;
+}
+.form .formItem__button:hover {
+  font-weight: bold;
+  border: 5px solid rgb(240, 138, 126);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.sms {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 3rem;
+  width: 50%;
+  padding-top: 3rem;
+  margin-left: 25%;
+}
+.sms div .fa {
+  font-size: 3rem;
+}
+
+.bottomThanks__button {
+  margin-left: 10.5rem;
+  font-size: 1.8rem;
+  font-style: lucida;
+  width: 25rem;
+  height: 5rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(4, 114, 4);
+  background-color: blanchedalmond;
+  box-shadow: 5px 5px 1px 1px rgb(150, 186, 150);
+  justify-items: center;
+  width: 7rem;
+}
+
+@media (max-width: 400px) {
+  header .menu__button {
+    display: block;
+    margin-left: 10.5rem;
+    font-size: 1.8rem;
+    font-style: lucida;
+    width: 25rem;
+    height: 5rem;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(4, 114, 4);
+    background-color: blanchedalmond;
+    box-shadow: 5px 5px 1px 1px rgb(150, 186, 150);
+    justify-items: center;
+    width: 7rem;
+    padding-right: 4em;
+    margin-left: 0.1rem;
+  }
+  header .cart__img {
+    margin-right: 2rem;
+  }
+  .navbar {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
